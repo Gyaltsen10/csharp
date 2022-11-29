@@ -232,6 +232,7 @@ namespace Calculator
 
                 con.Open();
                 string query = " insert into student values ('sandip','samakushi','984253644','nist')";
+                
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("saved sucessfully");
@@ -242,5 +243,67 @@ namespace Calculator
                 MessageBox.Show("error :" + ex.InnerException);
             }
         }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                con.Open();
+                string query = " update student set name = 'pessi' where id=2";
+          
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("update sucessfully");
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error :" + ex.InnerException);
+            }
+
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                con.Open();
+                string query = "DELETE FROM student where id=60";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("delete sucessfully");
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("error :" + ex.InnerException);
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+       display.Rows.Add("1", "anishu", "ktm");
+        }
+
+   
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            string data = sn.Text;
+            String data1 = name.Text;
+            string data2 = address.Text;
+            display.Rows.Add(data, data1, data2);
+
+        }
     }
+    
 }

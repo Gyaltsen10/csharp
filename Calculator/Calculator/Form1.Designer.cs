@@ -49,6 +49,18 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.display = new System.Windows.Forms.DataGridView();
+            this.number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stdname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stdaddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.sn = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
+            this.address = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.display)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -251,19 +263,123 @@
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(322, 97);
+            this.button20.Location = new System.Drawing.Point(288, 210);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(127, 126);
+            this.button20.Size = new System.Drawing.Size(60, 49);
             this.button20.TabIndex = 3;
-            this.button20.Text = "Connect";
+            this.button20.Text = "insert";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(288, 265);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(60, 41);
+            this.button21.TabIndex = 4;
+            this.button21.Text = "update";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(288, 312);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(60, 43);
+            this.button22.TabIndex = 5;
+            this.button22.Text = "delete";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // display
+            // 
+            this.display.AllowUserToAddRows = false;
+            this.display.AllowUserToDeleteRows = false;
+            this.display.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.display.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.number,
+            this.stdname,
+            this.stdaddress});
+            this.display.Location = new System.Drawing.Point(253, 12);
+            this.display.Name = "display";
+            this.display.ReadOnly = true;
+            this.display.RowTemplate.Height = 25;
+            this.display.Size = new System.Drawing.Size(340, 150);
+            this.display.TabIndex = 6;
+            // 
+            // number
+            // 
+            this.number.HeaderText = "sn";
+            this.number.Name = "number";
+            this.number.ReadOnly = true;
+            // 
+            // stdname
+            // 
+            this.stdname.HeaderText = "name";
+            this.stdname.Name = "stdname";
+            this.stdname.ReadOnly = true;
+            // 
+            // stdaddress
+            // 
+            this.stdaddress.HeaderText = "address";
+            this.stdaddress.Name = "stdaddress";
+            this.stdaddress.ReadOnly = true;
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(288, 361);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.TabIndex = 7;
+            this.button23.Text = "display";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(305, 390);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 8;
+            this.button24.Text = "button24";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // sn
+            // 
+            this.sn.Location = new System.Drawing.Point(424, 199);
+            this.sn.Name = "sn";
+            this.sn.Size = new System.Drawing.Size(100, 23);
+            this.sn.TabIndex = 9;
+          
+            // 
+            // name
+            // 
+            this.name.Location = new System.Drawing.Point(424, 249);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(100, 23);
+            this.name.TabIndex = 9;
+            // 
+            // address
+            // 
+            this.address.Location = new System.Drawing.Point(424, 283);
+            this.address.Name = "address";
+            this.address.Size = new System.Drawing.Size(100, 23);
+            this.address.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 439);
+            this.ClientSize = new System.Drawing.Size(585, 439);
+            this.Controls.Add(this.address);
+            this.Controls.Add(this.name);
+            this.Controls.Add(this.sn);
+            this.Controls.Add(this.button24);
+            this.Controls.Add(this.button23);
+            this.Controls.Add(this.display);
+            this.Controls.Add(this.button22);
+            this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
@@ -287,6 +403,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.display)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,5 +432,16 @@
         private Button button13;
         private Button button14;
         private Button button20;
+        private Button button21;
+        private Button button22;
+        private DataGridView display;
+        private DataGridViewTextBoxColumn number;
+        private DataGridViewTextBoxColumn stdname;
+        private DataGridViewTextBoxColumn stdaddress;
+        private Button button23;
+        private Button button24;
+        private TextBox sn;
+        private TextBox name;
+        private TextBox address;
     }
 }

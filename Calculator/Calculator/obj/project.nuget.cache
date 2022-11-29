@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O5wZWkDiy/+FUIiqxWkr6J7EyQNK3uRzv5Iss1F4XjdMX8U0StenRLS2jLtX5pJZ5bLWhDQxI3WnPQd82AXgSg==",
+  "dgSpecHash": "RRcydEMvhZ+gJ1tYbOO5G5igZHrUAc1DmYZ0JvqCGnU1TiCVeDcbaG+u09IhuQvjNjVbew/62HYpTJRlcpkFBA==",
   "success": true,
-  "projectFilePath": "D:\\gyaltsen lama\\cSharp\\Calculator\\Calculator\\Calculator.csproj",
+  "projectFilePath": "D:\\gyaltsen lama\\github\\csharp\\Calculator\\Calculator\\Calculator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\student3\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\student3\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

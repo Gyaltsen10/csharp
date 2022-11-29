@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\gyaltsen lama\\cSharp\\Calculator\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "D:\\gyaltsen lama\\github\\csharp\\Calculator\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "D:\\gyaltsen lama\\cSharp\\Calculator\\Calculator\\Calculator.csproj",
+      "projectPath": "D:\\gyaltsen lama\\github\\csharp\\Calculator\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\student3\\.nuget\\packages\\",
-      "outputPath": "D:\\gyaltsen lama\\cSharp\\Calculator\\Calculator\\obj\\",
+      "outputPath": "D:\\gyaltsen lama\\github\\csharp\\Calculator\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
